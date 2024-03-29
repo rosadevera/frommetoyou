@@ -1,12 +1,17 @@
+// $(document).ready(function() {
+//     $('#scattered figure').draggable();
+// });
+
 function toggleLayout() {
-    var landingDiv = document.querySelector('.landing');
+    console.log('button clicked');  
+    var landingDiv = document.querySelector('.container');
     
     // Toggle between scattered and masonry layout
     landingDiv.id = (landingDiv.id === 'scattered') ? 'masonry' : 'scattered';
 }
 
 // function randomizeImages() {
-//     var figures = document.querySelectorAll('.landing figure'); // Get all figures within the landing div
+//     var figures = document.querySelectorAll('#scattered figure');
 
 //     figures.forEach(function(figure) {
 //         // Generate random position for the figure
@@ -24,5 +29,4 @@ function toggleLayout() {
 //     });
 // }
 
-// // Call the function to randomize images when the page loads or refreshes
 // window.addEventListener('load', randomizeImages);
