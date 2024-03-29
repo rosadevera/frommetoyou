@@ -1,0 +1,82 @@
+body {
+    /* overflow: hidden; */
+}
+
+header {
+  position: fixed; 
+  z-index: 999; 
+}
+
+.landing {
+  margin: 20px;
+  /* border: red solid 2px; */
+}
+
+#scattered img {
+    width: 340px;
+    height:auto;
+}
+
+.organize {
+  background-color: #f075dd;
+  color:white;
+  font-size: 1rem;
+  padding:10px;
+  border-radius: 20px;
+  margin:20px;
+  transition:ease-in-out 0.75s;
+}
+
+.organize:hover {
+  cursor:pointer;
+  background-color: white;
+  color:#f075dd;
+}
+
+#masonry {
+  column-count: 4;
+  column-gap: 10px;
+  padding: 5px;
+}
+
+#masonry img {
+  width: 100%; /* Make images fill the columns */
+  height: auto;
+}
+
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+figure > img {
+  grid-row: 3 / -1;
+  grid-column: 1;
+}
