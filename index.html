@@ -5,38 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>from me to you</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
         <input type="button" value="organize" class="organize" onclick="toggleLayout()">
+        <label for="category-filter">category:</label>
+            <select id="category-filter">
+                <option value="all">all categories</option>
+                <option value="places">places</option>
+                <option value="art">art</option>
+                <option value="art">seasonal</option>
+                <option value="art">vintage/kitsch</option>
+                <option value="art">restaurants</option>
+                <option value="art">special</option>
+            </select>
+        <label for="year-filter">year:</label>
+            <select id="year-filter">
+                <option value="all">all</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2021">2023</option>
+                <option value="2022">2024</option>
+            </select>
     </header>
 
-    <div class="container" id="scattered">
-        <figure><img src=./images/01front.png></figure>
-        <figure><img src=./images/02front.png></figure>
-        <figure><img src=./images/03front.png></figure>
-        <figure><img src=./images/04front.png></figure>
-        <figure><img src=./images/05front.png></figure>
-        <figure><img src=./images/06front.png></figure>
-        <figure><img src=./images/07front.png></figure>
-        <figure><img src=./images/08front.png></figure>
-        <figure><img src=./images/09front.png></figure>
-        <figure><img src=./images/10front.png></figure>
-        <figure><img src=./images/11front.png></figure>
-        <figure><img src=./images/12front.png></figure>
-        <figure><img src=./images/13front.png></figure>
-        <figure><img src=./images/14front.png></figure>
-        <figure><img src=./images/15front.png></figure>
-        <figure><img src=./images/16front.png></figure>
-        <figure><img src=./images/17front.png></figure>
-        <figure><img src=./images/18front.png></figure>
-        <figure><img src=./images/19front.png></figure>
-        <figure><img src=./images/20front.png></figure>
-        <figure><img src=./images/21front.png></figure>
-    </div>
+    <div id="container" class="scattered"></div>
 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </body>
 </html>

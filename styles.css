@@ -6,14 +6,15 @@ header {
   position: inline; 
   z-index: 999; 
   height:25vh;
+  padding:12px;
 }
 
-.container {
+#container {
   margin: 10px;
   /* border: red solid 2px; */
 }
 
-#scattered img {
+.scattered img {
     width: 340px;
     height:auto;
 }
@@ -35,30 +36,17 @@ header {
   color:#f075dd;
 }
 
-#masonry {
+.masonry {
   top:25%;
   column-count: 4;
-  column-gap: 10px;
+  column-gap: 12px;
   padding: 5px;
 }
 
-#masonry img {
+.masonry img {
   width: 100%; /* Make images fill the columns */
   height: auto;
-}
-
-
-figure {
-  margin: 0;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  margin-bottom: 10px;
-  break-inside: avoid;
-}
-
-figure > img {
-  grid-row: 1 / -1;
-  grid-column: 1;
+  margin-bottom: 12px;
 }
 
 img {
@@ -69,17 +57,4 @@ img {
   -moz-user-select: none;
   -o-user-select: none;
   user-select: none;
-}
-
-figure {
-  margin: 0;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  margin-bottom: 10px;
-  break-inside: avoid;
-}
-
-figure > img {
-  grid-row: 3 / -1;
-  grid-column: 1;
 }
