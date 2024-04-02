@@ -199,15 +199,36 @@ function renderPostcards() {
     const container = document.getElementById('container');
     container.innerHTML = '';
 
-    // Filter postcards based on selected category and year
-    const filteredPostcards = postcards.filter(function(postcard) {
-        // Check if the category and year match the selected filters
-        const selectedCategory = document.getElementById('category-filter').value;
-        const selectedYear = document.getElementById('year-filter').value;
+    // Get the selected category and year from the dropdowns
+    const selectedCategory = document.getElementById('category-filter').value;
+    const selectedYear = document.getElementById('year-filter').value;
 
-        return (selectedCategory === 'all' || postcard.category.includes(selectedCategory)) &&
-               (selectedYear === 'all' || postcard.year === parseInt(selectedYear));
+    console.log('Selected Category:', selectedCategory);
+    console.log('Selected Year:', selectedYear);
+
+    // Filter postcards based on the selected category and year
+    const filteredPostcards = postcards.filter(function(postcard) {
+        // Split the category string into an array of categories
+        const categories = postcard.category.split(',').map(function(cat) {
+            return cat.trim(); // Remove whitespace
+        });
+    
+        console.log('Postcard:', postcard.title);
+        console.log('Postcard Categories:', categories);
+    
+        // Check if the postcard's categories include the selected category
+        const categoryMatch = selectedCategory === 'all' || categories.includes(selectedCategory);
+    
+        // Check if the postcard's year matches the selected year
+        const yearMatch = selectedYear === 'all' || postcard.year.toString() === selectedYear;
+    
+        console.log('Category Match:', categoryMatch);
+        console.log('Year Match:', yearMatch);
+    
+        return categoryMatch && yearMatch;
     });
+
+    console.log('Filtered Postcards:', filteredPostcards);
 
     // Create postcard elements for filtered postcards
     filteredPostcards.forEach(function(postcard) {
@@ -237,41 +258,34 @@ document.getElementById('year-filter').addEventListener('change', function() {
 });
 
 
-
-
-
-
-
-
-$(document).ready(function() {
-    $('.scattered img').draggable();
-});
-
 function toggleLayout() {
     console.log('button clicked');  
     let myContainer = document.getElementById ("container")
     
     // myContainer.classList.remove("scattered")
     myContainer.classList.toggle("masonry")
+
+    var button = document.querySelector('.organize');
+    if (button.value === 'organize') {
+        button.value = 'scatter';
+    } else {
+        button.value = 'organize';
+    }
 }
 
-// function randomizeImages() {
-//     var figures = document.querySelectorAll('.scattered figure');
 
-//     figures.forEach(function(figure) {
-//         // Generate random position for the figure
-//         var randomX = Math.floor(Math.random() * (window.innerWidth - figure.offsetWidth));
-//         var randomY = Math.floor(Math.random() * (document.body.scrollHeight - figure.offsetHeight));
-        
-//         // Generate random rotation for the figure
-//         var randomRotation = Math.floor(Math.random() * 360); // Rotate between 0 and 359 degrees
+$(document).ready(function() {
+        $('.scattered img').draggable();
+    });
 
-//         // Apply random position and rotation to the figure
-//         figure.style.position = 'absolute';
-//         figure.style.left = randomX + 'px';
-//         figure.style.top = randomY + 'px';
-//         figure.style.transform = 'rotate(' + randomRotation + 'deg)';
-//     });
-// }
 
-// window.addEventListener('load', randomizeImages);
+let expandBtn = document.getElementById("expand");
+let sidebar = document.getElementById("sidebar");
+    
+expandBtn.addEventListener("click", function (event) {
+    // Toggle the "opened" class on the expand button
+    expandBtn.classList.toggle("opened");
+    
+    // Toggle the "expanded" class on the sidebar
+    sidebar.classList.toggle("expanded");
+});    
