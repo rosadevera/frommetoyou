@@ -244,15 +244,12 @@ function renderPostcards() {
     });
 }
 
-// Call renderPostcards initially to render all postcards
 renderPostcards();
 
-// Event listener for category filter
 document.getElementById('category-filter').addEventListener('change', function() {
     renderPostcards();
 });
 
-// Event listener for year filter
 document.getElementById('year-filter').addEventListener('change', function() {
     renderPostcards();
 });
@@ -262,7 +259,6 @@ function toggleLayout() {
     console.log('button clicked');  
     let myContainer = document.getElementById ("container")
     
-    // myContainer.classList.remove("scattered")
     myContainer.classList.toggle("masonry")
 
     var button = document.querySelector('.organize');
@@ -274,18 +270,18 @@ function toggleLayout() {
 }
 
 
+
 $(document).ready(function() {
-        $('.scattered img').draggable();
-    });
+    $('.scattered img').draggable();
+});
 
 
+ 
 let expandBtn = document.getElementById("expand");
 let sidebar = document.getElementById("sidebar");
     
 expandBtn.addEventListener("click", function (event) {
-    // Toggle the "opened" class on the expand button
     expandBtn.classList.toggle("opened");
     
-    // Toggle the "expanded" class on the sidebar
     sidebar.classList.toggle("expanded");
 });    
