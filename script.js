@@ -193,44 +193,27 @@ const postcards = [
     }
 ];
 
-console.log(postcards);
-
 function renderPostcards() {
     const container = document.getElementById('container');
     container.innerHTML = '';
 
-    // Get the selected category and year from the dropdowns
     const selectedCategory = document.getElementById('category-filter').value;
     const selectedYear = document.getElementById('year-filter').value;
 
-    console.log('Selected Category:', selectedCategory);
-    console.log('Selected Year:', selectedYear);
-
-    // Filter postcards based on the selected category and year
     const filteredPostcards = postcards.filter(function(postcard) {
-        // Split the category string into an array of categories
         const categories = postcard.category.split(',').map(function(cat) {
-            return cat.trim(); // Remove whitespace
+            return cat.trim(); 
         });
     
-        console.log('Postcard:', postcard.title);
-        console.log('Postcard Categories:', categories);
-    
-        // Check if the postcard's categories include the selected category
         const categoryMatch = selectedCategory === 'all' || categories.includes(selectedCategory);
     
-        // Check if the postcard's year matches the selected year
         const yearMatch = selectedYear === 'all' || postcard.year.toString() === selectedYear;
-    
-        console.log('Category Match:', categoryMatch);
-        console.log('Year Match:', yearMatch);
     
         return categoryMatch && yearMatch;
     });
 
     console.log('Filtered Postcards:', filteredPostcards);
 
-    // Create postcard elements for filtered postcards
     filteredPostcards.forEach(function(postcard) {
         const postcardElement = document.createElement('div');
         postcardElement.className = 'postcard';
@@ -256,9 +239,52 @@ document.getElementById('year-filter').addEventListener('change', function() {
 });
 
 
+function randomizeImages() {
+    var containerHeight = Math.min(300 * window.innerHeight / 100, document.body.scrollHeight);
+    var containerWidth = window.innerWidth;
+    
+    var figures = document.querySelectorAll('.scattered img');
+
+    figures.forEach(function(figure) {
+        // Generate random position for the figure within the container boundaries
+        var randomX = Math.floor(Math.random() * (containerWidth - figure.offsetWidth));
+        var randomY = Math.floor(Math.random() * (containerHeight - figure.offsetHeight));
+        
+        // Generate random rotation for the figure
+        var randomRotation = Math.floor(Math.random() * 360); // Rotate between 0 and 359 degrees
+
+        // Apply random position and rotation to the figure
+        figure.style.position = 'absolute';
+        figure.style.left = randomX + 'px';
+        figure.style.top = randomY + 'px';
+        figure.style.transform = 'rotate(' + randomRotation + 'deg)';
+    });
+}
+
+// Function to clear transformations and random placement
+function clearTransformations() {
+    var figures = document.querySelectorAll('.scattered img');
+    figures.forEach(function(figure) {
+        figure.style.position = 'static'; // Reset position to default
+        figure.style.left = ''; // Clear left property
+        figure.style.top = ''; // Clear top property
+        figure.style.transform = 'none'; // Clear transformations
+    });
+}
+
+window.addEventListener('load', randomizeImages);
+
 function toggleLayout() {
     console.log('button clicked');
     let myContainer = document.getElementById("container");
+    if (myContainer.classList.contains("masonry")) {
+        // If switching to scattered layout, randomize images
+        randomizeImages();
+    } else {
+        // If switching to masonry layout, clear transformations
+        clearTransformations();
+    }
+    
     myContainer.classList.toggle("masonry");
     myContainer.classList.toggle("scattered");
 
