@@ -246,6 +246,7 @@ function renderPostcards() {
 
 renderPostcards();
 
+
 document.getElementById('category-filter').addEventListener('change', function() {
     renderPostcards();
 });
@@ -256,10 +257,10 @@ document.getElementById('year-filter').addEventListener('change', function() {
 
 
 function toggleLayout() {
-    console.log('button clicked');  
-    let myContainer = document.getElementById ("container")
-    
-    myContainer.classList.toggle("masonry")
+    console.log('button clicked');
+    let myContainer = document.getElementById("container");
+    myContainer.classList.toggle("masonry");
+    myContainer.classList.toggle("scattered");
 
     var button = document.querySelector('.organize');
     if (button.value === 'organize') {
@@ -270,10 +271,9 @@ function toggleLayout() {
 }
 
 
-
-$(document).ready(function() {
-    $('.scattered img').draggable();
-});
+// $(document).ready(function() {
+//     $('.scattered img').draggable();
+// });
 
 
  

@@ -1,26 +1,49 @@
-body {
-    overflow-x: hidden;
+@font-face {
+  font-family: Standard-book;
+  src: url(standard-book.otf);
 }
 
-.landing {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 100vw;
-  height: 100vh;
+@font-face {
+  font-family: Director-regular;
+  src: url(Director-Regular.otf);
+}
+
+@font-face {
+  font-family: Director-bold;
+  src: url(Director-bold.otf);
+}
+
+@font-face {
+  font-family: Director-light;
+  src: url(Director-Light.otf);
+}
+
+/* font-family: "sweet-fancy-script", sans-serif;
+font-weight: 300;
+font-style: normal; */
+
+/* font-family: "sweet-fancy-script", sans-serif;
+font-weight: 500;
+font-style: normal; */
+
+body {
+  overflow-x: hidden;
+    background-image: radial-gradient(#cfcfcf 1px, transparent 0);
+    background-size: 50px 50px;
 }
 
 .logo {
-  padding:12px;
   z-index: 999; 
 }
 
 .logo img {
   position: fixed;
-  right:30px;
-  width: 120px;
+  padding:12px;
+  right:10px;
+  width: 150px;
   height: auto;
   z-index: 999; 
+  filter: drop-shadow(0px 0px 1px #cfcfcf);
   transition: cubic-bezier(0.165, 0.84, 0.44, 1)0.5s;
 }
 
@@ -30,33 +53,82 @@ body {
 }
 
 header {
-  position: sticky; 
-  top: 0;
+  position: fixed; 
   z-index: 998; 
-  height:20vh;
-  padding:12px;
+  /* height:20vh; */
+  /* padding:12px; */
+}
+
+.name {
+  width: fit-content;
+  height: fit-content;
+  margin: 15px;
+}
+
+h1 {
+  font-family: 'Director-bold';
+  font-size: 1.15rem;
+  
+}
+
+.name h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .10em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+      typing 2.5s steps(12, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+
+p {
+  font-family: 'Standard-book';
+  font-size: 0.85rem;
+  line-height: 1.4;
 }
 
 .filters {
   display: flex;
   flex-direction: row;
-  width:50vw;
-  padding: 10px;
+  width:fit-content;
+  margin-left: 15px;
+  /* padding: 10px; */
   align-items: center; /* Center vertically */
   /* border: 2px solid red; */
 }
 
 .child {
   margin-right:25px;
+  font-family: 'Standard-book';
+  font-size: 0.9rem;
+}
+
+.child select {
+  background-color: #e8e8e8;
+  margin-left: 7px;
+  border-radius: 10px;
+  padding: 4px;
 }
 
 .organize {
   background-color: #f075dd;
   color:white;
-  font-size: 1rem;
+  font-family: 'Standard-book';
+  font-size: 0.9rem;
   padding:10px;
   border-radius: 15px;
-  border-color: white;
+  border: 1.5px solid black;
   transition:ease-in-out 0.75s;
 }
 
@@ -66,10 +138,10 @@ header {
   color:#f075dd;
 }
 
-
-
 #container {
   padding: 10px;
+  position: relative;
+  top: 25vh;
   /* border: red solid 2px; */
 }
 
@@ -78,17 +150,26 @@ header {
   height:auto;
 }
 
+.postcard {
+  filter: drop-shadow(0px 0px 1px #cfcfcf);
+}
+
+.scattered {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
 .masonry {
   /* top:25%; */
   column-count: 4;
-  column-gap: 12px;
-  padding: 5px;
+  column-gap: 25px;
+  padding: 10px;
 }
 
 .masonry img {
   width: 100%; /* Make images fill the columns */
   height: auto;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 img {
@@ -112,6 +193,7 @@ aside {
   right: -40vw; /* Initially off the screen to the right */
   top: 0;
   padding-left: 30px;
+  padding-top: 10px;
   transition: transform 0.3s ease-in-out;
   border-left: black 1px solid;
   z-index: 998; 
