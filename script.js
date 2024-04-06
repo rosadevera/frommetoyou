@@ -1,60 +1,60 @@
 const postcards = [
     {
-        "title": "Yoshitomo Nara 1",
+        "title": "Yoshitomo Nara from LACMA",
         "images": '01front.png',
         "year": 2021,
         "category": ["art", "seasonal"]
     },
     {
-        "title": "Yoshitomo Nara 2",
+        "title": "Yoshitomo Nara from LACMA",
         "images": '02front.png',
         "year": 2021,
         "category": ["art", "special"]
     },
     {
-        "title": "Yoshitomo Nara 3",
+        "title": "Yoshitomo Nara from LACMA",
         "images": '03front.png',
         "year": 2021,
         "category": ["art"]
     },
     {
-        "title": "Yoshitomo Nara 4",
+        "title": "Yoshitomo Nara from LACMA",
         "images": '04front.png',
         "year": 2021,
         "category": ["art"]
     },
     {
-        "title": "Yoshitomo Nara 5",
+        "title": "Yoshitomo Nara from LACMA",
         "images": '05front.png',
         "year": 2021,
         "category": ["art"]
     },
     {
-        "title": "Levain Bakery",
+        "title": "from Levain Bakery",
         "images": '06front.png',
         "year": 2022,
         "category": ["restaurants", "places"]
     },
     {
-        "title": "The Morgan Library",
+        "title": "from The Morgan Library",
         "images": '07front.png',
         "year": 2022,
         "category": ["places"]
     },
     {
-        "title": "826LA",
+        "title": "from 826LA",
         "images": '08front.png',
         "year": 2023,
         "category": ["art", "places"]
     },
     {
-        "title": "Rothko from Guggenheim",
+        "title": "Rothko from the Guggenheim",
         "images": '09front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
-        "title": "Guggenheim",
+        "title": "from the Guggenheim",
         "images": '10front.png',
         "year": 2023,
         "category": ["art", "places"]
@@ -66,19 +66,19 @@ const postcards = [
         "category": ["art"]
     },
     {
-        "title": "Joshua Tree 1",
+        "title": "from Joshua Tree",
         "images": '12front.png',
         "year": 2023,
         "category": ["places", "vintage/kitsch"]
     },
     {
-        "title": "Joshua Tree 2",
+        "title": "from Joshua Tree",
         "images": '13front.png',
         "year": 2023,
         "category": ["places", "vintage/kitsch"]
     },
     {
-        "title": "Getty",
+        "title": "from the Getty Villa",
         "images": '14front.png',
         "year": 2023,
         "category": ["art"]
@@ -96,97 +96,97 @@ const postcards = [
         "category": ["vintage/kitsch", "special"]
     },
     {
-        "title": "Year of the Rabbit 2023",
+        "title": "Year of the Rabbit from the UN",
         "images": '17front.png',
         "year": 2023,
         "category": ["seasonal"]
     },
     {
-        "title": "Sisters",
+        "title": "from Sisters Brooklyn",
         "images": '18front.png',
         "year": 2023,
         "category": ["restaurants"]
     },
     {
-        "title": "SEVENTEEN Boys Be",
+        "title": "from SEVENTEEN 'Boys Be' (HIDE Ver.)",
         "images": '19front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
-        "title": "niconeco fall",
+        "title": "from niconeco zakkaya (fall edition)",
         "images": '20front.png',
         "year": 2023,
         "category": ["places", "seasonal"]
     },
     {
-        "title": "Vintage Philly",
+        "title": "vintage from Philly",
         "images": '21front.png',
         "year": 2023,
         "category": ["vintage/kitsch", "places"]
     },
     {
-        "title": "Central Park in Fall",
+        "title": "Central Park in the fall",
         "images": '22front.png',
         "year": 2023,
         "category": ["places"]
     },
     {
-        "title": "With Maya",
+        "title": "with Maya in NYC!",
         "images": '23front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
-        "title": "Bonnes Fetes!",
+        "title": "Bonnes Fetes! from the Eiffel Tower",
         "images": '24front.png',
         "year": 2023,
         "category": ["places", "seasonal"]
     },
     {
-        "title": "Cows from Orsay",
+        "title": "Cows from Musée d'Orsay",
         "images": '25front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
-        "title": "Monet 1 from Orsay",
+        "title": "Monet from Musée d'Orsay",
         "images": '26front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
-        "title": "Monet 2 from Orsay",
+        "title": "Monet from Musée d'Orsay",
         "images": '27front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
-        "title": "Monet from l'Orangerie",
+        "title": "Monet from Musée de l'Orangerie",
         "images": '28front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
-        "title": "from the Louvre",
+        "title": "from Musée du Louvre",
         "images": '29front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
-        "title": "SALT CAMP",
+        "title": "SALT CAMP Dubai",
         "images": '30front.png',
         "year": 2024,
         "category": ["restaurants"]
     },
     {
-        "title": "Dia Beacon 1",
+        "title": "from Dia Beacon",
         "images": '31front.png',
         "year": 2024,
         "category": ["art"]
     },
     {
-        "title": "Dia Beacon 2",
+        "title": "from Dia Beacon",
         "images": '32front.png',
         "year": 2024,
         "category": ["art"]
@@ -237,11 +237,8 @@ function renderPostcards() {
 
     const filteredPostcards = postcards.filter(function(postcard) {
         const categories = postcard.category.map(cat => cat.trim()); // Trim each category string
-
         const categoryMatch = selectedCategory === 'all' || categories.includes(selectedCategory);
-    
         const yearMatch = selectedYear === 'all' || postcard.year.toString() === selectedYear;
-    
         return categoryMatch && yearMatch;
     });
 
@@ -254,13 +251,20 @@ function renderPostcards() {
         img.alt = postcard.title;
         img.id = 'postcard_' + index; // Assign a unique ID to the image element
     
+        const overlay = document.createElement('div');
+        overlay.className = 'postcard-overlay';
+        overlay.textContent = `${postcard.title} - ${postcard.year}`;
+    
         postcardElement.appendChild(img);
+        postcardElement.appendChild(overlay);
         container.appendChild(postcardElement);
     });
 
-    // Apply draggable functionality to the new images
+    // Apply draggable functionality after rendering postcards
     applyDraggable();
 }
+
+
 
 document.getElementById('category-filter').addEventListener('change', function() {
     renderPostcards();
