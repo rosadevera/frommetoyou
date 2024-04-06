@@ -28,7 +28,7 @@ font-style: normal; */
 
 body {
   overflow-x: hidden;
-    background-image: radial-gradient(#cfcfcf 1px, transparent 0);
+    background-image: radial-gradient(#b5b5b5 1px, transparent 0);
     background-size: 50px 50px;
 }
 
@@ -68,7 +68,14 @@ header {
 h1 {
   font-family: 'Director-bold';
   font-size: 1.15rem;
+  letter-spacing: -1px;
   
+}
+
+.title {
+  font-family: 'Director-bold';
+  font-size: 0.85rem;
+  letter-spacing: -1px;
 }
 
 .name h1 {
@@ -144,23 +151,26 @@ p {
   /* border: red solid 2px; */
 }
 
+.scattered {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+
 .scattered img {
   width: 340px;
   height:auto;
 }
 
-.scattered img:hover {
-  transform:scale(1.025);
-  cursor: pointer;
-}
 
 .postcard {
   filter: drop-shadow(0px 0px 1px #cfcfcf);
 }
 
-.scattered {
-  padding-left: 20vw;
-  padding-right: 20vw;
+.scattered .postcard img:hover {
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1)0.3s;
+  transform:scale(1.025);
+  cursor: move;
 }
 
 .masonry {
@@ -209,4 +219,8 @@ aside p {
 
 .expanded {
   transform: translateX(-100%); /* Slide in from right to left */
+}
+
+.hidden {
+  display: none;
 }
