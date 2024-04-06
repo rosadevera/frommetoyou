@@ -18,14 +18,6 @@
   src: url(Director-Light.otf);
 }
 
-/* font-family: "sweet-fancy-script", sans-serif;
-font-weight: 300;
-font-style: normal; */
-
-/* font-family: "sweet-fancy-script", sans-serif;
-font-weight: 500;
-font-style: normal; */
-
 body {
   overflow-x: hidden;
     background-image: radial-gradient(#b5b5b5 1px, transparent 0);
@@ -242,5 +234,70 @@ aside p {
   
 
 .masonry .postcard:hover .postcard-overlay {
-  display: flex; /* Show overlay on hover */
+  display: flex; 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .logo img {
+    width: 90px;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+  }
+  
+  .title {
+    font-size: 0.75rem;
+  }
+
+  p {
+    font-size: 0.75rem;
+  }
+
+  .filters {
+    flex-direction: column;
+    gap: 5px;
+    width:fit-content;
+    margin-left: 0px;
+    align-items: left;
+    align-items: left;
+    text-align: left;
+  }
+  
+  .child {
+    margin-right:0px;
+    font-size: 0.75rem;
+  }
+
+  .organize {
+    font-size: 0.75rem;
+  }
+
+  .scattered img {
+    width: 150px;
+  }
+  
+  .masonry {
+    top: 25vh;
+    column-count: 2;
+    column-gap: 25px;
+    padding: 10px;
+  }
+  
+  .masonry img {
+    width: 100%; /* Make images fill the columns */
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  aside {
+    width: 90vw;
+    right: -90vw; 
+  }
+  
+  aside p {
+    width:250px;
+  }
 }
