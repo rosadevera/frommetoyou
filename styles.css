@@ -242,7 +242,7 @@ aside p {
 @media only screen and (max-width: 768px) {
   .logo img {
     width: 90px;
-    right: 14vw;
+    right: 5vw;
   }
 
   h1 {
@@ -298,7 +298,7 @@ aside p {
   }
   
   aside p {
-    width:250px;
+    width:280px;
     padding-left: 10px;
   }
 
