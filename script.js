@@ -309,10 +309,15 @@ function renderPostcards() {
         overlay.className = 'postcard-overlay';
         overlay.textContent = `${postcard.title} - ${postcard.year}`;
     
+        overlay.addEventListener('click', function() {
+            // Navigate to edit.html page
+            window.location.href = 'edit.html';
+        });
+    
         postcardElement.appendChild(img);
         postcardElement.appendChild(overlay);
         container.appendChild(postcardElement);
-    });
+    });    
 
     // Apply draggable functionality after rendering postcards
     applyDraggable();

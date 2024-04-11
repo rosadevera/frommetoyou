@@ -208,6 +208,60 @@ aside p {
   width:280px;
 }
 
+.tulips {
+  position: absolute;
+  bottom:50px;
+  left:370px;
+}
+
+.rainbow {
+  position: absolute;
+  bottom:150px;
+  left:200px;
+}
+
+.kiss{
+  position: absolute;
+  bottom:100px;
+  left:150px;
+}
+
+.butterfly{
+  position: absolute;
+  bottom:100px;
+  left:290px;
+}
+
+.angel{
+  position: absolute;
+  bottom:100px;
+  left:400px;
+}
+
+.dove{
+  position: absolute;
+  bottom:170px;
+  left:60px;
+}
+
+.stars {
+  position: absolute;
+  bottom:100px;
+  left:200px;
+}
+
+.rose1{
+  position: absolute;
+  bottom:50px;
+  left:230px;
+}
+
+.rose2 {
+  position: absolute;
+  bottom:50px;
+}
+
+
 .expanded {
   transform: translateX(-100%); /* Slide in from right to left */
 }
@@ -236,8 +290,6 @@ aside p {
 .masonry .postcard:hover .postcard-overlay {
   display: flex; 
 }
-
-
 
 @media only screen and (max-width: 768px) {
   .logo img {
@@ -287,7 +339,7 @@ aside p {
   }
   
   .masonry img {
-    width: 100%; /* Make images fill the columns */
+    width: 100%; 
     height: auto;
     margin-bottom: 25px;
   }
@@ -304,5 +356,14 @@ aside p {
 
   aside img {
     padding-left: 10px;
+  }
+}
+
+@media only screen and (min-width:769px) and (max-width: 992px) {
+  .masonry {
+    top: 20vh;
+    column-count: 3;
+    column-gap: 25px;
+    padding: 10px;
   }
 }
