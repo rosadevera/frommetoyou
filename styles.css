@@ -189,12 +189,12 @@ img {
 
 
 aside {
+  position: fixed;
   width: 35vw;
   min-height: 100vh;
   background: white;
   display: flex;
   flex-direction: column;
-  position: fixed;
   right: -40vw; /* Initially off the screen to the right */
   top: 0;
   padding-left: 30px;
@@ -242,7 +242,7 @@ aside p {
 @media only screen and (max-width: 768px) {
   .logo img {
     width: 90px;
-    left: 70vw;
+    right: 14vw;
   }
 
   h1 {
@@ -293,11 +293,16 @@ aside p {
   }
 
   aside {
-    width: 90vw;
-    right: -90vw; 
+    width: 110vw;
+    right: -120vw; 
   }
   
   aside p {
-    width:230px;
+    width:250px;
+    padding-left: 10px;
+  }
+
+  aside img {
+    padding-left: 10px;
   }
 }
