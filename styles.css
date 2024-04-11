@@ -20,8 +20,8 @@
 
 body {
   overflow-x: hidden;
-    background-image: radial-gradient(#b5b5b5 1px, transparent 0);
-    background-size: 50px 50px;
+  background-image: radial-gradient(#b5b5b5 1px, transparent 0);
+  background-size: 50px 50px;
 }
 
 .logo {
@@ -34,7 +34,7 @@ body {
   right:10px;
   width: 150px;
   height: auto;
-  z-index: 999; 
+  z-index: 9999; 
   filter: drop-shadow(0px 0px 1px #cfcfcf);
   transition: cubic-bezier(0.165, 0.84, 0.44, 1)0.5s;
 }
@@ -201,7 +201,7 @@ aside {
   padding-top: 10px;
   transition: transform 0.3s ease-in-out;
   border-left: black 1px solid;
-  z-index: 998; 
+  z-index: 999; 
 }
 
 aside p {
@@ -242,6 +242,7 @@ aside p {
 @media only screen and (max-width: 768px) {
   .logo img {
     width: 90px;
+    left: 70vw;
   }
 
   h1 {
@@ -259,10 +260,9 @@ aside p {
   .filters {
     flex-direction: column;
     gap: 5px;
-    width:fit-content;
-    margin-left: 0px;
-    align-items: left;
-    align-items: left;
+    width: fit-content;
+    margin-left: 12px;
+    align-items: flex-start; /* Align items to the start (left) */
     text-align: left;
   }
   
@@ -293,11 +293,11 @@ aside p {
   }
 
   aside {
-    width: 90vw;
-    right: -90vw; 
+    width: 100vw;
+    right: -100vw; 
   }
   
   aside p {
-    width:250px;
+    width:230px;
   }
 }

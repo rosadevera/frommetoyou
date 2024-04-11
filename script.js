@@ -102,7 +102,7 @@ const postcards = [
         "category": ["seasonal"]
     },
     {
-        "title": "from Sisters Brooklyn",
+        "title": "from Sisters in Brooklyn",
         "images": '18front.png',
         "year": 2023,
         "category": ["restaurants"]
@@ -190,6 +190,60 @@ const postcards = [
         "images": '32front.png',
         "year": 2024,
         "category": ["art"]
+    },
+    {
+        "title": "from American Bar in West Village",
+        "images": '33front.png',
+        "year": 2023,
+        "category": ["restaurants"]
+    },
+    {
+        "title": "from Sisters in Brooklyn",
+        "images": '34front.png',
+        "year": 2023,
+        "category": ["restaurants"]
+    },
+    {
+        "title": "from Dubai",
+        "images": '35front.png',
+        "year": 2022,
+        "category": ["art", "places"]
+    },
+    {
+        "title": "from Noguchi Museum",
+        "images": '36front.png',
+        "year": 2024,
+        "category": ["art"]
+    },
+    {
+        "title": "from Noguchi Museum",
+        "images": '41front.png',
+        "year": 2024,
+        "category": ["art"]
+    },
+    {
+        "title": "Diptyque",
+        "images": '37front.png',
+        "year": 2024,
+        "category": ["vintage/kitsch"]
+    },
+    {
+        "title": "Diptyque",
+        "images": '38front.png',
+        "year": 2024,
+        "category": ["vintage/kitsch"]
+    },
+    {
+        "title": "from Money Cake in Flushing",
+        "images": '39front.png',
+        "year": 2024,
+        "category": ["restaurants"]
+    },
+    {
+        "title": "from Money Cake in Flushing",
+        "images": '40front.png',
+        "year": 2024,
+        "category": ["restaurants"]
     }
 ];
 
