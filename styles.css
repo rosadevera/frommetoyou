@@ -293,8 +293,8 @@ aside p {
   }
 
   aside {
-    width: 100vw;
-    right: -100vw; 
+    width: 90vw;
+    right: -90vw; 
   }
   
   aside p {
