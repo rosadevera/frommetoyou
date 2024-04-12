@@ -289,6 +289,7 @@ aside p {
 
 .masonry .postcard:hover .postcard-overlay {
   display: flex; 
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
