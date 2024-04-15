@@ -1,246 +1,287 @@
 const postcards = [
     {
         "title": "Yoshitomo Nara from LACMA",
+        "path":"01front",
         "images": '01front.png',
         "year": 2021,
         "category": ["art", "seasonal"]
     },
     {
         "title": "Yoshitomo Nara from LACMA",
+        "path":"02front",
         "images": '02front.png',
         "year": 2021,
         "category": ["art", "special"]
     },
     {
         "title": "Yoshitomo Nara from LACMA",
+        "path":"03front",
         "images": '03front.png',
         "year": 2021,
         "category": ["art"]
     },
     {
         "title": "Yoshitomo Nara from LACMA",
+        "path":"04front",
         "images": '04front.png',
         "year": 2021,
         "category": ["art"]
     },
     {
         "title": "Yoshitomo Nara from LACMA",
+        "path":"05front",
         "images": '05front.png',
         "year": 2021,
         "category": ["art"]
     },
     {
         "title": "from Levain Bakery",
+        "path":"06front",
         "images": '06front.png',
         "year": 2022,
         "category": ["restaurants", "places"]
     },
     {
         "title": "from The Morgan Library",
+        "path":"07front",
         "images": '07front.png',
         "year": 2022,
         "category": ["places"]
     },
     {
         "title": "from 826LA",
+        "path":"08front",
         "images": '08front.png',
         "year": 2023,
         "category": ["art", "places"]
     },
     {
         "title": "Rothko from the Guggenheim",
+        "path":"09front",
         "images": '09front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "from the Guggenheim",
+        "path":"10front",
         "images": '10front.png',
         "year": 2023,
         "category": ["art", "places"]
     },
     {
         "title": "Alice Neel from the Whitney",
+        "path":"11front",
         "images": '11front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "from Joshua Tree",
+        "path":"12front",
         "images": '12front.png',
         "year": 2023,
         "category": ["places", "vintage/kitsch"]
     },
     {
         "title": "from Joshua Tree",
+        "path":"13front",
         "images": '13front.png',
         "year": 2023,
         "category": ["places", "vintage/kitsch"]
     },
     {
         "title": "from the Getty Villa",
+        "path":"14front",
         "images": '14front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "from Giant Robot",
+        "path":"15front",
         "images": '15front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "On Vacation... Missing You",
+        "path":"16front",
         "images": '16front.png',
         "year": 2023,
         "category": ["vintage/kitsch", "special"]
     },
     {
         "title": "Year of the Rabbit from the UN",
+        "path":"17front",
         "images": '17front.png',
         "year": 2023,
         "category": ["seasonal"]
     },
     {
         "title": "from Sisters in Brooklyn",
+        "path":"18front",
         "images": '18front.png',
         "year": 2023,
         "category": ["restaurants"]
     },
     {
         "title": "from SEVENTEEN 'Boys Be' (HIDE Ver.)",
+        "path":"19front",
         "images": '19front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "from niconeco zakkaya (fall edition)",
+        "path":"20front",
         "images": '20front.png',
         "year": 2023,
         "category": ["places", "seasonal"]
     },
     {
         "title": "vintage from Philly",
+        "path":"21front",
         "images": '21front.png',
         "year": 2023,
         "category": ["vintage/kitsch", "places"]
     },
     {
         "title": "Central Park in the fall",
+        "path":"22front",
         "images": '22front.png',
         "year": 2023,
         "category": ["places"]
     },
     {
         "title": "with Maya in NYC!",
+        "path":"23front",
         "images": '23front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "Bonnes Fetes! from the Eiffel Tower",
+        "path":"24front",
         "images": '24front.png',
         "year": 2023,
         "category": ["places", "seasonal"]
     },
     {
         "title": "Cows from Musée d'Orsay",
+        "path":"25front",
         "images": '25front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "Monet from Musée d'Orsay",
+        "path":"26front",
         "images": '26front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "Monet from Musée d'Orsay",
+        "path":"27front",
         "images": '27front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "Monet from Musée de l'Orangerie",
+        "path":"28front",
         "images": '28front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "from Musée du Louvre",
+        "path":"29front",
         "images": '29front.png',
         "year": 2023,
         "category": ["art"]
     },
     {
         "title": "SALT CAMP Dubai",
+        "path":"30front",
         "images": '30front.png',
         "year": 2024,
         "category": ["restaurants"]
     },
     {
         "title": "from Dia Beacon",
+        "path":"31front",
         "images": '31front.png',
         "year": 2024,
         "category": ["art"]
     },
     {
         "title": "from Dia Beacon",
+        "path":"32front",
         "images": '32front.png',
         "year": 2024,
         "category": ["art"]
     },
     {
         "title": "from American Bar in West Village",
+        "path":"33front",
         "images": '33front.png',
         "year": 2023,
         "category": ["restaurants"]
     },
     {
         "title": "from Sisters in Brooklyn",
+        "path":"34front",
         "images": '34front.png',
         "year": 2023,
         "category": ["restaurants"]
     },
     {
         "title": "from Dubai",
+        "path":"35front",
         "images": '35front.png',
         "year": 2022,
         "category": ["art", "places"]
     },
     {
         "title": "from Noguchi Museum",
+        "path":"36front",
         "images": '36front.png',
         "year": 2024,
         "category": ["art"]
     },
     {
         "title": "from Noguchi Museum",
+        "path":"41front",
         "images": '41front.png',
         "year": 2024,
         "category": ["art"]
     },
     {
         "title": "Diptyque",
+        "path":"37front",
         "images": '37front.png',
         "year": 2024,
         "category": ["vintage/kitsch"]
     },
     {
         "title": "Diptyque",
+        "path":"38front",
         "images": '38front.png',
         "year": 2024,
         "category": ["vintage/kitsch"]
     },
     {
         "title": "from Money Cake in Flushing",
+        "path":"39front",
         "images": '39front.png',
         "year": 2024,
         "category": ["restaurants"]
     },
     {
         "title": "from Money Cake in Flushing",
+        "path":"40front",
         "images": '40front.png',
         "year": 2024,
         "category": ["restaurants"]
@@ -310,9 +351,8 @@ function renderPostcards() {
         overlay.textContent = `${postcard.title} - ${postcard.year}`;
     
         overlay.addEventListener('click', function() {
-            // Navigate to edit.html page
-            window.location.href = 'edit.html';
-        });
+            window.location.href = `./pages/${postcard.path}.html`;
+        });        
     
         postcardElement.appendChild(img);
         postcardElement.appendChild(overlay);

@@ -1,21 +1,21 @@
 @font-face {
     font-family: Standard-book;
-    src: url(standard-book.otf);
+    src: url(../standard-book.otf);
 }
   
 @font-face {
     font-family: Director-regular;
-    src: url(Director-Regular.otf);
+    src: url(../Director-Regular.otf);
 }
   
 @font-face {
     font-family: Director-bold;
-    src: url(Director-bold.otf);
+    src: url(../Director-bold.otf);
 }
   
 @font-face {
     font-family: Director-light;
-    src: url(Director-Light.otf);
+    src: url(..//Director-Light.otf);
 }
   
 body {
@@ -194,6 +194,10 @@ select {
 .postcard {
     position: relative; /* Add this */
     /* border: red 3px solid; */
+}
+
+.postcard3 img{
+    width:500px
 }
 
 .input-box {

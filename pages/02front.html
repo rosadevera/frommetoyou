@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>from me to you</title>
+    <meta name="description" content="Project 2. Elastic Collection - Exploring love languages in the digital realm, this site allows the user to select a postcard, write a customized note on the back and send it to their loved ones no matter where they are in the world.">
+    <link rel="icon" type="image/x-icon" href="/images/favicon2.png">
+    <link rel="stylesheet" href="https://use.typekit.net/fjh7vgh.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=La+Belle+Aurore&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles02.css">
+    
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script defer src="script02.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img id="expand" src="../images/frommetoyou2.png">
+    </div>
+
+    <aside id="sidebar">
+        <p><span class=title>from me to you💌  </span>  is a digital home for rosa’s ever growing postcard collection throughout the years...</p>
+        <br>
+        <p>exploring love languages in the digital realm, this site allows the user to select a postcard, write a customized note on the back and send it to their loved ones no matter where they are in the world ✧･ﾟ: *✧･ﾟ:*</p>
+        <br>
+        <img src="../images/real.gif" width="280px" height="auto">
+        <img class="tulips" src="../images/tulips.gif" width="60px" height="auto">
+        <img class="rainbow" src="../images/rainbow.gif" width="80px" height="auto">
+        <img class="kiss" src="../images/kiss.gif" width="40px" height="auto">
+        <img class="butterfly" src="../images/butterfly.gif" width="40px" height="auto">
+        <img class="angel" src="../images/angel.gif" width="80px" height="auto">
+        <img class="dove" src="../images/dove.gif" width="100px" height="auto">
+        <img class="stars" src="../images/stars.gif" width="200px" height="auto">
+        <img class="rose1" src="../images/rose1.gif" width="60px" height="auto">
+        <img class="rose2" src="../images/rose2.gif" width="100px" height="auto">
+    </aside>
+
+    <section class="container2">
+        <section class="left">
+
+            <section class="name">
+                <h1>from me to you... 💌</h1>
+            </section>
+            <a href="../index.html"><button class="back">go back to collection</button></a>
+            
+            <div class="input-box">
+                <div class="info">
+                    <h1>Yoshitomo Nara from LACMA</h1>
+                    <p>2021 - art, seasonal</p>
+                </div>
+
+                <label for="customText">write a message on the back:</label>
+                <textarea class="textbox1" id="customText" placeholder="dear..."></textarea>
+                <label for="textFont">font:</label>
+                <select id="textFont">
+                    <option value="La Belle Aurore">handwriting</option>
+                    <option value="Courier">typewriter</option>
+                    <option value="Standard-book">standard</option>
+                </select>
+                <label for="textSize">text size:</label>
+                <input type="range" id="textSize" min="10" max="28" value="16">
+                <label for="textColor">text color:</label>
+                <input type="color" id="textColor">
+                <label for="customText2">sending this to:</label>
+                <textarea class="textbox2" id="customText2" placeholder="name... email... whatever you wish to write..."></textarea>
+            </div>  
+        </section>
+        <section class="right">
+            <div class="postcard3">
+                <img src="../images/02front.png" alt="Postcard Front">
+            </div>
+            <div class="postcard">
+                <span class="editable-text" id="box">dear...</span>
+                <span class="editable-text2" id="box2">sending this to...</span>
+                <img src="../images/backtemplate.png" alt="Postcard Back">
+            </div>
+        </section>
+    </section>           
+
+</body>
+</html>
