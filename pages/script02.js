@@ -82,3 +82,33 @@ document.getElementById("customText2").addEventListener("input", updateTextConte
 document.getElementById("textColor").addEventListener("input", updateTextContent2);
 document.getElementById("textFont").addEventListener("change", updateTextContent2);
 document.getElementById("textSize").addEventListener("input", updateTextContent2);
+
+
+// Function to capture and download the postcard image
+function downloadPostcard() {
+    // Select the postcard element
+    const postcardElement = document.querySelector('.postcard');
+
+    // Use HTML2Canvas to render the postcard element as an image
+    html2canvas(postcardElement).then(canvas => {
+        // Convert the canvas to a data URL
+        const dataURL = canvas.toDataURL();
+
+        // Create a temporary link element
+        const link = document.createElement('a');
+        link.href = dataURL;
+        link.download = 'postcard.png';
+
+        // Simulate a click on the link to trigger the download
+        document.body.appendChild(link);
+        link.click();
+
+        // Clean up
+        document.body.removeChild(link);
+    });
+}
+
+// Add event listener to download button after the page and external scripts are fully loaded
+window.addEventListener('load', function() {
+    document.getElementById('downloadButton').addEventListener('click', downloadPostcard);
+});

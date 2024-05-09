@@ -325,6 +325,12 @@ aside p {
     bottom:50px;
   }  
 
+.download {
+    position:fixed;
+    bottom: 50px;
+    right:50px;
+}
+
 
 @media only screen and (max-width: 768px) {
     .logo img {

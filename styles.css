@@ -117,6 +117,7 @@ p {
   margin-left: 7px;
   border-radius: 10px;
   padding: 4px;
+  cursor: pointer;
 }
 
 .organize {
